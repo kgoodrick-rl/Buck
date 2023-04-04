@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "Buck"
+  site-url: "https://kgoodrick-rl.github.io/Buck"
+  description: "Code for design and optimization of a buck converter"
+  repo-branch: master
+  repo-url: "https://github.com/kgoodrick-rl/Buck"
