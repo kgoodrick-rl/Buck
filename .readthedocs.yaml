@@ -12,6 +12,8 @@ build:
       - ln -s "$(pwd)"/opt/quarto/bin/quarto /home/docs/checkouts/readthedocs.org/user_builds/buck-rl-nbdev/envs/latest/bin
       - echo $PATH
       - quarto --version
+      - mkdir docs
+      - mkdir sites
 
 
 mkdocs:
