@@ -9,7 +9,8 @@ build:
       - curl -L https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.361/quarto-1.3.361-linux-amd64.deb -o quarto.deb
       - dpkg -x quarto.deb .
       - rm quarto.deb
-      - export PATH="$PATH:/opt/quarto/bin"
+      - export PATH="$PATH:$(pwd)/opt/quarto/bin"
+      - echo $PATH
       - quarto --version
 
 
