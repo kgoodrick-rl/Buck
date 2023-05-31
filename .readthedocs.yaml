@@ -11,8 +11,7 @@ build:
       - mv opt/quarto ./
       - rmdir opt
       - mkdir -p ~/.local/bin
-      - ln -s "$(pwd)"/quarto/bin/quarto ~/.local/bin
-      - export PATH="~/.local/bin:$PATH"
+      - ln -s "$(pwd)"/quarto/bin/quarto .
       - quarto --version
 
 
