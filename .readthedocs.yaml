@@ -5,10 +5,6 @@ build:
   tools:
     python: "3.10"
   commands:
-    - git clone --no-single-branch --depth 50 https://github.com/kgoodrick-rl/Buck.git .
-    - git checkout --force origin/master
-    - git clean -d -f -f
-    - asdf global python 3.10.8
     - python -mvirtualenv $READTHEDOCS_VIRTUALENV_PATH
     - python -m pip install --upgrade --no-cache-dir pip setuptools
     - python -m pip install --upgrade --no-cache-dir pillow mock==1.0.1 alabaster>=0.7,<0.8,!=0.7.5 commonmark==0.9.1 recommonmark==0.5.0 mkdocs<1.1
