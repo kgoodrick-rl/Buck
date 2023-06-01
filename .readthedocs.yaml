@@ -7,7 +7,7 @@ build:
   commands:
     - python -mvirtualenv $READTHEDOCS_VIRTUALENV_PATH
     - python -m pip install --upgrade --no-cache-dir pip setuptools
-    - python -m pip install --upgrade --no-cache-dir pillow mock==1.0.1 alabaster>=0.7,<0.8,!=0.7.5 commonmark==0.9.1 recommonmark==0.5.0 mkdocs<1.1
+    # - python -m pip install --upgrade --no-cache-dir pillow mock==1.0.1 alabaster>=0.7,<0.8,!=0.7.5 commonmark==0.9.1 recommonmark==0.5.0 mkdocs<1.1
     - python -m pip install --upgrade --upgrade-strategy eager --no-cache-dir .[dev]
     - curl -L https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.361/quarto-1.3.361-linux-amd64.deb -o quarto.deb
     - dpkg -x quarto.deb .
